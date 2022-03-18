@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 10rem;
+  font-weight: 200;
+}
+.container .search {
+  text-align: center;
+}
+.search-input {
+  text-align: center;
+  font-family: inherit;
+  height: 40px;
+  width: 300px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 0.2px solid #6d6b6b;
+  background: rgba(34, 34, 34, 0.212);
+}
+.app .wrapper {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.027);
+  height: 100vh;
+}
+.app .container {
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app {
+  background: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.app .place {
+  font-size: 4rem;
+}
+.description {
+  position: relative;
+  right: -70%;
+  transform-origin: 0 0;
+  color: #444444;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background: #1d1d1d25;
+  padding: 20px;
+  border: 1px solid #646464;
+  border-radius: 10px;
+}
+@media screen and (max-width: 880px) {
+  .bottom {
+    margin-top: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .weather-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+  }
+}
